@@ -28,3 +28,4 @@ in case npm install fall ... -> add command "--force"
 - Prettier (file-preferences--VS Code Settings : "Default formatter", "Format on Save")
 - styled-components (by styled-components)
 "# NoteMerge-Frontend" 
+"# NoteMerge-Frontend" 
