@@ -1,14 +1,17 @@
+import React from "react";
 import { View, Text } from "react-native";
-import styled from "styled-components/native";
-
-const Container = styled(View)``;
-const Title = styled(Text)``;
 
 const MyInfoPresenter = () => {
   return (
-    <Container>
-      <Title>MyInfo 화면입니다다</Title>
-    </Container>
+    <View className="flex-1 bg-white p-4">
+      <Text className="text-black text-2xl font-bold mb-6">내 정보</Text>
+      <View className="bg-[#F3F4F6] rounded-xl p-4 mb-4">
+        <Text className="text-[#374151]">닉네임: 사용자</Text>
+      </View>
+      <View className="bg-[#F3F4F6] rounded-xl p-4">
+        <Text className="text-[#374151]">진행 현황</Text>
+      </View>
+    </View>
   );
 };
 

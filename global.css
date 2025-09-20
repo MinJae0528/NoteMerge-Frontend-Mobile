@@ -1,0 +1,13 @@
+/* 
+ * NativeWind를 위한 Tailwind CSS 글로벌 스타일 파일
+ * 
+ * 이 파일은 React Native에서 Tailwind CSS 클래스를 사용하기 위해 필요합니다.
+ * NativeWind는 Tailwind CSS를 React Native에서 사용할 수 있게 해주는 라이브러리입니다.
+ * 
+ * @tailwind base: Tailwind의 기본 스타일 (reset, normalize 등)
+ * @tailwind components: Tailwind의 컴포넌트 클래스들
+ * @tailwind utilities: Tailwind의 유틸리티 클래스들 (margin, padding, colors 등)
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
