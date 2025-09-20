@@ -1,31 +1,15 @@
-# Create Expo Bare Project
+# 📚 NoteMerge
 
-npx create-expo-app myproject --template bare-minimum
+> **학습 자료 통합 관리 앱** - 언제 어디서나 스마트한 학습을 경험하세요
 
-## 1. Install React Navigator
+## 🎯 프로젝트 소개
 
-url: https://reactnavigation.org/docs/getting-started
-npm install @react-navigation/native
-npx expo install react-native-screens react-native-safe-area-context (for bare project)
+NoteMerge는 학습 자료를 통합적으로 관리하고 AI 기반 요약본과 퀴즈 기능을 제공하는 모바일 앱입니다. 웹사이트에서 진행되는 주요 학습을 보완하여, 이동 중에도 간편하게 복습할 수 있도록 설계되었습니다.
 
-## 2. Add Native Stack
+### ✨ 주요 기능
 
-npm install @react-navigation/native-stack
-
-## 3. Add Bottom Tab Bar
-
-npm install @react-navigation/bottom-tabs
-
-# Install Library
-
-in case npm install fall ... -> add command "--force"
-
-1. Styled-components for RN
-   npm install @types/styled-components-react-native
-
-# Install Extension
-
-- Prettier (file-preferences--VS Code Settings : "Default formatter", "Format on Save")
-- styled-components (by styled-components)
-"# NoteMerge-Frontend" 
-"# NoteMerge-Frontend" 
+- 🤖 **AI 요약본**: 복잡한 학습 내용을 간단하고 이해하기 쉽게 요약
+- 🧠 **스마트 퀴즈**: 학습 내용을 바탕으로 한 맞춤형 퀴즈 제공
+- 📅 **학습 캘린더**: 학습 일정과 진도를 시각적으로 관리
+- 📝 **노트 관리**: 개인 메모와 학습 노트를 체계적으로 정리
+- 👤 **학습 프로필**: 개인화된 학습 통계 및 진도 관리
