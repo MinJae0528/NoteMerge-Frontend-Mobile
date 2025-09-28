@@ -11,13 +11,17 @@
  * 참고: 이 설정이 없으면 className 속성이 작동하지 않습니다.
  */
 module.exports = function (api) {
-  // Babel 캐시를 활성화하여 빌드 성능 향상
   api.cache(true);
   return {
-    // Expo 프로젝트에 최적화된 프리셋 (JSX, ES6+ 문법 지원)
     presets: ["babel-preset-expo"],
-    // NativeWind CSS 클래스를 React Native 스타일 객체로 변환하는 플러그인
-    // 이 플러그인이 className="flex-1 bg-white" 같은 코드를 실제 스타일로 변환합니다
-    plugins: ["nativewind/babel"],
+    plugins: [
+      // 필요하면 다른 플러그인들을 여기에 추가하세요.
+      // 예: ['module-resolver', { alias: { '@components': './src/components' } }],
+      ["@babel/plugin-transform-class-properties", { loose: true }],
+      ["@babel/plugin-transform-private-methods", { loose: true }],
+      ["@babel/plugin-transform-private-property-in-object", { loose: true }],
+      // 아래 플러그인은 반드시 "마지막"에 위치해야 합니다.
+      "react-native-worklets/plugin",
+    ],
   };
 };
