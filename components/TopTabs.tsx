@@ -8,8 +8,8 @@ type TopTabsProps = {
 
 const tabs: Array<{ key: TopTabsProps["active"]; label: string }> = [
   { key: "Notes", label: "노트" },
-  { key: "Calendar", label: "캘린더" },
   { key: "Quiz", label: "퀴즈" },
+  { key: "Calendar", label: "캘린더" },
 ];
 
 const TopTabs: React.FC<TopTabsProps> = ({ active, onSelect }) => {

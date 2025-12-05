@@ -6,6 +6,9 @@ import Login from "../screens/Login";
 import Notes from "../screens/Notes";
 import Calendar from "../screens/Calendar";
 import Quiz from "../screens/Quiz";
+import NoteDetail from "../screens/Notes/NoteDetail";
+import QuizDetail from "../screens/Quiz/QuizDetail";
+import QuizResult from "../screens/Quiz/QuizResult";
 
 const Stack = createNativeStackNavigator();
 
@@ -41,6 +44,21 @@ const MainStack = () => {
         name="MyInfo"
         component={MyInfo}
         options={{ title: "My Info" }}
+      />
+      <Stack.Screen
+        name="NoteDetail"
+        component={NoteDetail}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="QuizDetail"
+        component={QuizDetail}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="QuizResult"
+        component={QuizResult}
+        options={{ headerShown: false }}
       />
     </Stack.Navigator>
   );
